@@ -1,0 +1,60 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+	<main>
+		<div class="container">
+			<div id="title-container">
+				<h1 id="title">SCHOOLFOUR APPLICATION</h1>
+				<p id="description">SchoolFour is a career accelerator for students and young graduates. It's 100% free until you are hired. Apply to be part of our next cohort and we will get back to you with a week. Alumni from our programme have landed their dream job at companies like McKinsey, Google or Goldman Sachs. Come join them!</p>
+			</div>
+			<form id="survey-form">
+				<div class="row">
+					<label class="label" id="name-label">Name *</label>
+					<input class="input" type="text" name="name" id="name" placeholder="What's your name?" required>
+				</div>
+				<div class="row">
+					<label class="label" id="email-label">Email *</label>
+					<input class="input" type="email" name="email" id="email" placeholder="And your email?" required>
+				</div>
+				<div class="row">
+					<label class="label" id="number-label">Age *</label>
+					<input class="input" type="number" name="age" id="number" min="0" max="100" placeholder="How old are you?">
+				</div>
+				<div class="row">
+					<label class="label">Current country *</label>
+					<select class="input" type="dropdown" name="name" id="dropdown">
+						<option value="US">US</option>
+						<option value="UK">UK</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+				<div class="row">
+					<label class="label">What type of position are you looking for?</label>
+					<div class="input">
+						<ul style="list-style: none; padding-left: 0; margin-top: 0;">
+							<li><input type="radio" name="type" value="fulltime"> Full time</li>
+							<li><input type="radio" name="type" value="internship"> Internship</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<label class="label">Which field are you interested in?</label>
+					<div class="input">
+						<ul style="list-style: none; padding-left: 0; margin-top: 0;">
+							<li><input type="checkbox" name="role" value="software"> Software Engineering</li>
+							<li><input type="checkbox" name="role" value="product"> Product Management</li>
+							<li><input type="checkbox" name="role" value="design"> Product Design</li>
+							<li><input type="checkbox" name="role" value="data"> Data Science</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<label class="label">Is there anything else we should know about you?</label>
+					<textarea name="comment" form="survey-form">Enter text here...</textarea>
+				</div>
+				<input type="submit" value="SUBMIT" id="submit">
+			</form>
+		</div>
+	</main>
+</body>
